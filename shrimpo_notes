@@ -1,0 +1,25 @@
+login with streampusher
+
+upload pack.zip
+
+compo
+
+pack
+
+submissions
+--------------
+Compo
+  name
+  start_at
+  end_at
+  pack_file
+  has_many :submissions
+
+Submission
+  belongs_to :compo
+  belongs_to :user
+
+Ranking
+  belongs_to :compo
+  has_many :submissions
+  belongs_to :user
