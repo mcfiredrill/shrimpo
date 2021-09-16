@@ -7,6 +7,7 @@ defmodule ShrimpoBackendWeb.Router do
 
   scope "/api", ShrimpoBackendWeb do
     pipe_through :api
+    resources "/compos", CompoController, except: [:new, :edit]
   end
 
   # Enables LiveDashboard only for development
